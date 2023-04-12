@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 10px;
+  padding: 0;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  background-color: #191010;
+  color: #3d0c0c;
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  align-items: center;
+  justify-content: Space-around;
+}
+.form {
+  background-color: #ecce8d;
+  border-radius: 10px;
+  display: inline-block;
+  width: 1200px;
+  padding: 50px;
+}
+.form__header {
+  margin-bottom: 45px;
+  text-align: center;
+}
+.form__header h1 {
+  font-size: 40px;
+  line-height: 28px;
+  color: #3d0c0c;
+  margin: 0;
+}
+.form__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form__group {
+  margin-bottom: 20px;
+}
+.form__control--grow {
+    height: 140px !important;
+    display: inline-block;
+  }
+.form__control {
+  background: #f6f3f0;
+  border: 1px solid #5a3f3f;
+  border-radius: 10px;
+  padding: 15px;
+  height: 50px;
+  min-width: 100px;
+}
+.form__checkbox {
+  margin-top: 30px;
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 24px;
+}
+.form__checkbox input {
+  display: none;
+}
+.form__checkbox input[type="checkbox"]:checked ~ .form__checkbox--label::before {
+  background: #d35535 !important;
+}
+.form__checkbox--label::before {
+  content: "";
+  margin-right: 8px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  background: #ffffff;
+  border: 2px solid #5a3f3f;
+  vertical-align: middle;
+}
+.form__submit {
+  padding: 20px 24px;
+  font-weight: 500;
+  color: #5a3f3f;
+  border: 5px solid #5a3f3f;
+  background-color: #efa243;
+  border-radius: 50px;
+  display: flex;
+  cursor: pointer;
+  margin-left: auto;
+  margin-bottom: 24px;
+}
+.form__reset{
+  padding: 20px 24px;
+  font-weight: 500;
+  color: #5a3f3f;
+  border: 5px solid #5a3f3f;
+  background-color: #efa243;
+  border-radius: 50px;
+  display: flex;
+  cursor: pointer;
+  margin-left: auto;
+}
+.form__color{
+  background: #fafafa;
+  border: 4px solid #5a3f3f;
+  border-radius: 10px;
+  padding: 3px;
+  height: 50px;
+  min-width: 20px;
+}

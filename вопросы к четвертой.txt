@@ -1,0 +1,2 @@
+.form__checkbox input[type="checkbox"]:checked ~ .form__checkbox--label::before { // что это за конструкция и как она работает?
+Как я могу с помощью классов изменить внешний вид кнопок элемента наподобие radio?

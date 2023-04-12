@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Работа 4</title>
+ </head>
+ <body>
+    <form class="form">
+        <div class="form__header">
+          <h1>Забронировать номер</h1>
+        </div>
+        <div class="form__body">
+          <div class="form__col">
+            <div class="form__group">
+              <label>Фамилия<br />
+              <input type="text" class="form__control" />
+              </label>
+            </div>
+            <div class="form__body">
+                <div class="form__group">
+                  <label>Имя<br />
+                  <input type="text" class="form__control" />
+                  </label>
+                </div>
+          </div>
+          <div class="form__group">
+            <label>Выберите дату<br />
+              <input type="date" class="form__color"/>
+            </label>
+          </div>
+          <div class="form__group">
+            <label>Выберите время<br />
+              <input type="time" class="form__color"/>
+            </label>
+          </div>
+        </div>
+          <div class="form__col">
+            <div class="form__group">
+            <label>Email<br />
+            <input
+              type="email"
+              class="form__control"
+              placeholder="person@mail.ru"
+            />
+            </label>
+          </div>
+            <div class="form__group">
+              <label>Телефон<br />
+                <input type="tel" class="form__control"  placeholder="+7 --- -- -- ---"/>
+              </label>
+            </div>
+            <div class="form__group">
+              <label>Выберите цвет<br />
+                <input type="color" class="form__color"/>
+              </label>
+            </div>
+            <div>
+              <select>
+              <option selected value="city">Выберите город</option>
+              <option value="Saratov">Саратов</option>
+              <option value="Moscow">Москва</option>
+              <option value="Saint Petersburg">Санкт-Петербург</option>
+             </select>
+            </div>
+          </div>
+          <div class="form__col">
+            <div class="form__group">
+              <label>Замечания<br />
+              <textarea
+                cols="40"
+                rows="10"
+                class="form__control form__control--grow"
+              ></textarea>
+              </label>
+            </div>
+            <div>
+          <p>Звездность отеля:</p>
+          <input id="1" type="radio" name="star">
+          <label for="1">1</label>
+      
+          <input id="2" type="radio" name="star">
+          <label for="2">2</label>
+
+          <input id="3" type="radio" name="star">
+          <label for="3">3</label>
+
+          <input id="4" type="radio" name="star">
+          <label for="4">4</label>
+
+          <input id="5" type="radio" name="star">
+          <label for="5">5</label>
+        </div>
+          </div>
+        </div>
+        <div class="form__footer">
+        <div class="form__checkbox">
+          <input type="checkbox"  id="newsletter" />
+          <label for="newsletter"
+             class="form__checkbox--label">Связаться со мной после отправки формы</label
+          >
+        </div>
+        <button type="submit" class="form__submit">
+          Отправить
+        </button>
+        <button type="reset" class="form__reset">
+          Стереть заполненные данные
+        </button>
+      </form>
+    </body>
+  </html>
